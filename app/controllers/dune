@@ -1,0 +1,8 @@
+(library
+(name controllers)
+(libraries lwt lwt.unix
+           opium
+           safepass
+           ocoi
+           models queries db)
+(preprocess (pps lwt_ppx ppx_yojson ppx_deriving_yojson)))
