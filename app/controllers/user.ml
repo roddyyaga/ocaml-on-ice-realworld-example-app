@@ -47,6 +47,7 @@ module User_no_password = struct
     { username; email; bio; image }
 end
 
+(* TODO - put somewhere more sensible since also used by profiles *)
 let string_option_to_json string_opt =
   match string_opt with Some s -> `String s | None -> `Null
 

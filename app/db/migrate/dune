@@ -1,5 +1,5 @@
 (executables
-(names user_migrate user_rollback)
+(names user_migrate user_rollback follow_migrate follow_rollback)
 (libraries lwt
            queries db)
 (preprocess (pps lwt_ppx)))
